@@ -1,0 +1,3 @@
+# Ignore the following filetypes and directories
+.DS_Store
+tmp/**/* 
