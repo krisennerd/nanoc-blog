@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>krisennerd.de >> Reaper – Verschiedene Kapitelmarken mit WiiMote</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="/blog-home.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a name="#top" class="navbar-brand" href="/">['kri:z&#601;nn&#604;:d]</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/about">Über mich</a>
+                    </li>
+                    <li><a href="/contact">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- blog entry -->
+                <h2>Reaper – Verschiedene Kapitelmarken mit WiiMote</h2>
+                <h5><aside><i class="fa fa-calendar">&nbsp;</i> 25.01.2014&nbsp;<i class="fa fa-user"></i>&nbsp;Pascal&nbsp;<i class="fa fa-tag"></i>&nbsp;<a href="/tag/AppleScript" rel="tag">AppleScript</a>, <a href="/tag/Podcast" rel="tag">Podcast</a>, <a href="/tag/Podcasting" rel="tag">Podcasting</a>, <a href="/tag/Reaper" rel="tag">Reaper</a></h5><hr></aside>
+               <span class="block"><p>In den letzten Tagen beschäftige ich mich intensiver mit dem Aufnahme-Workflow für <a href="http://skrupuloes.de/">skrupuloes</a>. Dazu habe ich mir die <a href="http://ultraschall.wikigeeks.de/">Ultraschall Video Tutorials</a> von Ralf (<a href="http://wikigeeks.de/">Wikigeeks</a>) angeschaut. Dort erklärt er recht anschaulich wie man sich mittels WiiMote stumm schaltet und wie man mit dieser auch Kapitelmarken in Reaper setzen kann. Diese können auch mittlerweile direkt als .csv Datei zu auphonic importiert werden.</p>
+
+<p>Was aber wenn ich nicht nur Kapitelmarken setzen will wenn ein Themenwechsel ansteht? Möglicherweise miaut die Katze unverhofft oder man legt eine Pinkelpause ein. In der Nachbearbeitung will man die Stellen auch schnell finden um sie raus zu schneiden. Das könnte man mit speziell eingefärbten Kapitelmarken tun. Aber wie soll das schnell während der Aufnahme gehen? Hierzu gibt es eine Möglichkeit. Auch wenn diese über zwei Banden gespielt ist. Momentan scheint es (nach meinem Kenntnisstand) keine bessere zu geben. Zur Sache:</p>
+
+<!-- more -->
+
+<h3 id="applescript-um-marker-direkt-zu-benennen">AppleScript um Marker direkt zu benennen</h3>
+<p>In Reaper gibt es leider nicht die Funktion einem Marker direkt einen Namen zuzuweisen. Diese müssen immer von Hand benannt werden. Dieses Problem kann man allerdings umgehen. Zumindest wenn man einfach eine farbliche Unterscheidung will und keine genauere Beschreibung. Wenn man OSCulator bereits eingerichtet hat, kann man dort einfach Tasten ein AppleScript zuweisen.
+Das Script sieht dann wie folgt aus:</p>
+<pre><code>tell application "REAPER64"
+activate
+   tell application "System Events"
+      keystroke "m" using {shift down}
+      keystroke "Schnittmarke"
+      keystroke return
+   end tell
+end tell
+</code></pre>
+
+<h3 id="marker-automatisch-farben-zuweisen">Marker automatisch Farben zuweisen</h3>
+<p>Um jetzt die mit festen Namen zugewiesenen Markern auch direkt eine Farbe zuzuweisen kann man das <a href="http://code.google.com/p/sws-extension/">Reaper SWS Plugin</a> nutzen. Installieren und Reaper neu starten. Jetzt kann man über das Menu “Erweiterungen” oder “Extensions” den Punkt “Auto Color/Icon” auswählen.
+Dort kann man dann Markern mit bestimmten Namen eine Farbe zuweisen.</p>
+
+<p>Danke an Udo (<a href="http://www.fernsehmuell.de/">sein Podcast</a>) für die Idee mit dem einfärben der Kapitmarken!</p>
+
+<h3 id="der-internet-stammtisch">Der Internet-Stammtisch</h3>
+<p>Vielleicht ist es Zufall, vielleicht hat sich bei den Zuschauer_innen aber auch über die letzten Jahre zu viel Unmut angestaut: Gerade prasselt wegen zwei unterschiedlichen Themen (von zwei unterschiedliche Sendeanstalten) einiges an Kritik auf den öffentlich-rechtlichen Rundfunk.
+Im Internet haben Debatten und Aufreger oft die Eigenheit sehr laut zu sein. Zum einen wird das sicherlich mit Filter-Blasen zusammenhängen die man sich fast unausweichlich schafft.
+Nun habe ich auch das <a href="http://lumma.de/2014/01/27/die-sache-mit-lanz-jauch-und-all-den-anderen/">Blog von Nico Lumma</a> abonniert. Ich bin selten seiner Meinung. Macht ja aber auch nichts. (Mein Versuch die Filterblase zu durchbrechen)
+Nun schreibt Nico, dass im Netz ein Stammtisch-Niveau herrscht. Ich glaube allerdings, dass er den Fehler macht, durch das Netz auf ein besseres Niveau der Diskussion zu hoffen. Das Netz tut aber nur eines: Es ermöglicht mehr Menschen ihrer Meinung Gehöhr zu verschaffen. Was sonst in der Eckkneipe am Stammtisch verschallt landet nun eben bei Twitter, Facebook oder sonstwo – und verhallt damit nicht so schnell. Allerdings bietet sich mit dem Medium auch die Möglichkeit, dass geistreiche Beiträge eine weitere Reichweite haben. Das Grundrauschen kommt einem vielleicht nur etwas lauter vor. Die Qualität bleibt fast unverändert zum “analogen Leben”.</p>
+
+<p>Falls dieser Beitrag jetzt etwas unstrukturiert und wirr wirkt, liegt das wohl daran, dass ich einfach mal meine Gedanken ausspeichern musste und diese eben zu lange für einen Post in einem sozialen Netzwerk waren.
+Oder um es sinngemäß mit den Worten des Doctors zu sagen:</p>
+
+<p><em>“Ich denke viel ich kann mir nicht alles merken”</em>;-)</p></span>
+                
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="well">
+                    <h4>Suche</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /well -->
+                <div class="well">
+                    <h4>Tags</h4>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <div class="well">
+                    <h4>Blogroll</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="http://nikeeeymy.de">nikeeemy.de</a>
+                                </li>
+                                <li><a href="http://debilux.org">debilux.org</a>
+                                </li>
+                                <li><a href="http://cccs.de">cccs.de</a>
+                                </li>
+                                <li><a href="http://skrupuloes.de/">skrupuloes.de</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /well -->
+                <div class="well">
+                    <h4>Letzte Tweets</h4>
+                    <p>Bootstrap's default wells work great for side widgets! What is a widget anyways...?</p>
+                </div>
+                <!-- /well -->
+            </div>
+        </div>
+
+        <hr>
+    <div class="btn-group container">
+     <div align="center" class="col-lg-8">
+     <a class="previous" title="Und täglich grüßt das Murmeltier: Besonders in Hollywood" href="/2013/12/und-taglich-grusst-das-murmeltier-besonders-in-hollywood/"><button type='button' class='btn btn-default'><i class='fa fa-angle-double-left'></i> Älterer Artikel </button></a>
+     <a href='#top'><button type="button" class="btn btn-default"><i class="fa fa-angle-double-up"></i></button></a>
+     <a href='/'><button type="button" class="btn btn-default"><i class="fa fa-home"></i></button></a>
+     <a class="next" title="Lanz, Snowden und der Internet-Stammtisch" href="/2014/01/lanz-snowden-und-der-internet-stammtisch/"><button type='button' class='btn btn-default'><i class='fa fa-angle-double-right'></i> Neuerer Artikel </button></a>
+     </div>
+    </div>
+
+    </div>
+    <!-- /.container -->
+   <footer class="footer">
+    <div class="container narrow row-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                </br></br>
+                <div align="center"><a href="http://feedpress.me/krisennerd"><i class="fa fa-rss fa-2x"></i></a> <a href="https://alpha.app.net/klein_p"><i class="fa fa-adn fa-2x"></i></a>
+<a href="https://twitter.com/klein_p"><i class="fa fa-twitter fa-2x"></i></a>
+<a href="https://github.com/krisennerd"><i class="fa fa-github fa-2x"></i></a></p></div>
+                     <div align="center"><p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.de">CC BY-NC-ND 3.0</a> - krisennerd.de - proudly made with <a href="http://nanoc.ws/">nanoc</a>, <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></p></div>
+                </div>
+            </div>
+           </div>
+        </footer>
+    <!-- JavaScript -->
+    <script src="bootstrap/js/jquery-1.10.2.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</body>
+
+</html>
