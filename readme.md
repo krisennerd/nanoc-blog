@@ -29,9 +29,9 @@ The follow features are build in:
 ## Sources & Information:
 
 Thanks for the people who write great blogs and tutorials. Some source code pattern are adapted from these tutorials:
-	- [Dave Clark](http://clarkdave.net/2012/02/building-a-static-blog-with-nanoc/ )
-	- [Jakub Chodounsky](http://chodounsky.net/2013/03/28/introduction-to-static-site-generation-with-nanoc/ )
-	-[Luksz](https://coderwall.com/p/hoqv3q ) 
+- [Dave Clark](http://clarkdave.net/2012/02/building-a-static-blog-with-nanoc/ )
+- [Jakub Chodounsky](http://chodounsky.net/2013/03/28/introduction-to-static-site-generation-with-nanoc/ )
+- [Luksz](https://coderwall.com/p/hoqv3q ) 
 
 ## License
 
