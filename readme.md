@@ -11,14 +11,17 @@ The following features are built in:
 
 ## To-Do's
 
+### Open Issues
 - Get search bar working
-- Get buttons for Smartphones working
 - Get page for tag overview working
 - Get pages for each tag working
 - Implement RSS/Atom feed
 - Implement Rules for static sources
 - Implement Rules for article images
 - Validating the HTML and CSS code
+
+### Done 
+- Get buttons for Smartphones working
 
 ## Credits
 
