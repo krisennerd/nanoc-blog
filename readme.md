@@ -1,8 +1,8 @@
 ## Simple nanoc blog template
 ## Desrciption
 
-A simple blogging layout for [nanoc](http://nanoc.ws/ ) for starting a blog.
-The follow features are build in:
+A simple blogging layout for [nanoc](http://nanoc.ws/ ) to start a blog.
+The following features are built in:
 
 - [Bootstrap Framework](http://getbootstrap.com/ ) based on:
 	- [Blog Home Template](http://startbootstrap.com/blog-home.php ) 
@@ -12,7 +12,7 @@ The follow features are build in:
 ## To-Do's
 
 - Get search bar working
-- Get buttons für Smartphones working
+- Get buttons for Smartphones working
 - Get page for tag overview working
 - Get pages for each tag working
 - Implement RSS/Atom feed
@@ -28,7 +28,7 @@ The follow features are build in:
 
 ## Sources & Information:
 
-Thanks for the people who write great blogs and tutorials. Some source code pattern are adapted from these tutorials:
+Thanks to the people who write great blogs and tutorials. Some source code patterns are adapted from these tutorials:
 - [Dave Clark](http://clarkdave.net/2012/02/building-a-static-blog-with-nanoc/ )
 - [Jakub Chodounsky](http://chodounsky.net/2013/03/28/introduction-to-static-site-generation-with-nanoc/ )
 - [Luksz](https://coderwall.com/p/hoqv3q ) 
