@@ -24,7 +24,8 @@ The follow features are build in:
 
 - **Author:** Pascal Klein - pascal.klein@krisennerd.de
 - **Blog:** http://krisennerd.de
-- 
+
+
 ## Sources & Information:
 
 Thanks for the people who write great blogs and tutorials. Some source code pattern are adapted from these tutorials:
