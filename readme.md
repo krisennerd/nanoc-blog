@@ -9,19 +9,24 @@ The following features are built in:
 	- [Blog Post Template](http://startbootstrap.com/blog-post.php )
 - [Font Awesome Icon Font](http://fortawesome.github.io/Font-Awesome/ )
 
+### Installation
+You need to prepare some parts of this template to get them working:
+
+- [RSS Feed](https://github.com/krisennerd/nanoc-blog/wiki/RSS-Feed )
+
 ## To-Do's
 
 ### Open Issues
 - Get search bar working
 - Get page for tag overview working
 - Get pages for each tag working
-- Implement RSS/Atom feed
 - Implement Rules for static sources
 - Implement Rules for article images
 - Validating the HTML and CSS code
 
 ### Done 
 - Get buttons for Smartphones working
+- Implement RSS/Atom feed
 
 ## Credits
 
