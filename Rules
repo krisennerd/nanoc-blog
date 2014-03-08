@@ -13,6 +13,14 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+##############################################################################
+# COMPILATION RULES
+##############################################################################
+
+compile '/feed/' do
+  filter :erb
+end
+
 compile '/bootstrap/js/*' do
 	nil
 end
@@ -44,6 +52,10 @@ compile '*' do
     layout 'default'
   end
 end
+
+##############################################################################
+# ROUTING RULES
+##############################################################################
 
 route '/bootstrap/' do
   '/bootstrap.css'

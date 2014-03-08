@@ -29,16 +29,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a name="#top" href="/" class="navbar-brand">my blog</a>
+                <span name="#top" href="/" class="navbar-brand">my blog</span>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/about">About</a>
-                    </li>
-                    <li><a href="/contact">Contact</a>
-                    </li>
+                  <li><%= link_to_unless_current('Home', '/')%>
+                  </li>
+                  <li><%= link_to_unless_current('Über mich', '/about/')%>
+                  </li>
+                  <li><%= link_to_unless_current('Impressum', '/contact/')%>
+                  </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -114,7 +116,7 @@
             <div class="row">
                 <div class="col-lg-12">
                 </br></br>
-                <div align="center"><a href="http://yourfeed"><i class="fa fa-rss fa-2x"></i></a> <a href="https://alpha.app.net/username"><i class="fa fa-adn fa-2x"></i></a>
+                <div align="center"><a href="feed.xml"><i class="fa fa-rss fa-2x"></i></a> <a href="https://alpha.app.net/username"><i class="fa fa-adn fa-2x"></i></a>
 <a href="https://twitter.com/username"><i class="fa fa-twitter fa-2x"></i></a>
 <a href="https://github.com/username"><i class="fa fa-github fa-2x"></i></a></p></div>
                      <div align="center"><p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.de">CC BY-NC-ND 3.0</a> - myblog.domain.com - proudly made with <a href="http://nanoc.ws/">nanoc</a>, <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></p></div>
